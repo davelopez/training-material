@@ -70,59 +70,93 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
-                        </a>
-                        <div class="dropdown-menu">
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Ftranscriptomics%2Ftutorials%2Fref-based%2Ftutorial.html&edit-text=&act=url" title="">
-                                Français
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Ftranscriptomics%2Ftutorials%2Fref-based%2Ftutorial.html&edit-text=&act=url" title="">
-                                日本語
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Ftranscriptomics%2Ftutorials%2Fref-based%2Ftutorial.html&edit-text=&act=url" title="">
-                                Español
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Ftranscriptomics%2Ftutorials%2Fref-based%2Ftutorial.html&edit-text=&act=url" title="">
-                                Português
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Ftranscriptomics%2Ftutorials%2Fref-based%2Ftutorial.html&edit-text=&act=url" title="">
-                                العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Ftranscriptomics%2Ftutorials%2Fref-based%2Ftutorial.html&edit-text=&act=url" title="">
-                                And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
+        
+        <a class="dropdown-item" href="/training-material/topics/transcriptomics/faqs/" title="Check our FAQs for the Transcriptomics topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/transcriptomics/tutorials/ref-based/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this rrepository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
+            </div>
+
+            <div id="lang-selector">
+                
+                <strong>Automatic Translations</strong>
+
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/ref-based/tutorial.html&edit-text=&act=url">
+                Français
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/ref-based/tutorial.html&edit-text=&act=url">
+                日本語
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/ref-based/tutorial.html&edit-text=&act=url">
+                Español
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/ref-based/tutorial.html&edit-text=&act=url">
+                Português
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/ref-based/tutorial.html&edit-text=&act=url">
+                العربية
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Ftranscriptomics%2Ftutorials%2Fref-based%2Ftutorial.html&edit-text=&act=url" title="">
+                And more!
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -150,12 +184,27 @@
     </div>
 </li>
 
-
+                    <!--
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/transcriptomics/tutorials/ref-based/tutorial.md">
+                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/transcriptomics/tutorials/ref-based/tutorial.md">
                             <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
                         </a>
                     </li>
+                    -->
+
+                     <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -211,7 +260,7 @@
   },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -410,7 +459,7 @@
 }
     </script>
 
-    <section class="tutorial">
+    <section class="tutorial topic-transcriptomics">
         <h1 data-toc-skip>Reference-based RNA-Seq data analysis</h1>
         
 
@@ -543,7 +592,7 @@
             
 
             
-            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 8 hours</p>
+            <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 8 hours</div>
             
 
             
@@ -552,7 +601,7 @@
             
 
             
-            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
+            <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
             <ul>
                 <div class="supporting_material">
                 
@@ -581,11 +630,15 @@
 
                 
                     <li class="btn btn-default supporting_material">
-<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/transcriptomics/tutorials/ref-based/tours/">
+<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/main/topics/transcriptomics/tutorials/ref-based/tours/">
     <i class="fas fa-magic" aria-hidden="true"></i><span class="visually-hidden">interactive_tour</span> Tours
 </a>
 
 </li>
+                
+
+                
+                
                 
 
                 
@@ -597,17 +650,11 @@
     <ul class="dropdown-menu">
     
         <li>
-            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/master/topics/transcriptomics/docker" title="Docker image for this tutorial">
+            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/main/topics/transcriptomics/docker" title="Docker image for this tutorial">
                 <i class="fab fa-docker" aria-hidden="true"></i><span class="visually-hidden">docker_image</span> Docker image
             </a>
         </li>
     
-    
-        
-    
-        
-    
-        
     
         
     
@@ -658,9 +705,13 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="https://galaxy.genouest.org" title="Galaxy@GenOuest">
             Galaxy@GenOuest
         </a>
+        
+    
         
     
         
@@ -711,6 +762,14 @@
     
         
     
+        
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://plants.usegalaxy.eu/" title="Plant Anaylsis Workbench">
+            Plant Anaylsis Workbench
+        </a>
         
     
         
@@ -771,6 +830,8 @@
     
         
     
+        
+    
     </ul>
 
 
@@ -780,7 +841,7 @@
             </ul>
             
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Feb 16, 2021 </p>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> May 26, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -856,18 +917,8 @@
     <li>
       <p>Create a new history for this <span class="notranslate">RNA</span>-Seq exercise</p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Creating a new history</h3>
-
-        <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel</p>
-
-        <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>
-        <ol>
-          <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>
-          <li>Select the option <strong>Create New</strong> from the menu</li>
-        </ol>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history</h3>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>    <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>    <li>Select the option <strong>Create New</strong> from the menu</li>  </ol></blockquote>
     </li>
     <li>Import the FASTQ file pairs from <a href="https://zenodo.org/record/4541751">Zenodo</a> or a data library:
       <ul>
@@ -881,48 +932,10 @@ https://zenodo.org/record/4541751/files/GSM461180_1.fastqsanger
 https://zenodo.org/record/4541751/files/GSM461180_2.fastqsanger
 </code></pre></div>      </div>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-importing-data-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data via links</h3>
-
-        <ul>
-          <li>Copy the link location</li>
-          <li>
-            <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>
-          </li>
-          <li>Select <strong>Paste/Fetch Data</strong></li>
-          <li>
-            <p>Paste the link into the text field</p>
-          </li>
-          <li>
-            <p>Press <strong>Start</strong></p>
-          </li>
-          <li><strong>Close</strong> the window</li>
-        </ul>
-
-        <p>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</p>
-
-      </blockquote>
-
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data from a data library</h3>
-
-        <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>
-
-        <ul>
-          <li>
-            <p>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></p>
-          </li>
-          <li>
-            <p>Find the correct folder (ask your instructor)</p>
-          </li>
-          <li>Select the desired files</li>
-          <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>
-          <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>
-          <li>Click on <strong>Import</strong></li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>    <li>Copy the link location</li>    <li>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</li>    <li>Select <strong>Paste/Fetch Data</strong></li>    <li>Paste the link into the text field</li>    <li>Press <strong>Start</strong></li>    <li><strong>Close</strong> the windowBy default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</li>  </ul></blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>    <li>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></li>    <li>Find the correct folder (ask your instructor)</li>    <li>Select the desired files</li>    <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>    <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>    <li>Click on <strong>Import</strong></li>  </ul></blockquote>
 
       <blockquote class="comment">
         <h3 id="comment-comment"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Comment</h3>
@@ -940,48 +953,20 @@ https://zenodo.org/record/4541751/files/GSM461180_2_subsampled.fastqsanger
     <li>
       <p>Rename each dataset according to the sample id (e.g. <code class="language-plaintext highlighter-rouge">GSM461177_1</code>)</p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Renaming a dataset</h3>
-        <ul>
-          <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>
-          <li>In the central panel, change the <strong>Name</strong> field</li>
-          <li>Click the <strong>Save</strong> button</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset</h3>  <ul>    <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>    <li>In the central panel, change the <strong>Name</strong> field</li>    <li>Click the <strong>Save</strong> button</li>  </ul></blockquote>
     </li>
     <li>
       <p>Check that the datatype is <code class="language-plaintext highlighter-rouge">fastqsanger</code> (e.g. <strong>not</strong> <code class="language-plaintext highlighter-rouge">fastq</code>). If it is not, please change the datatype to <code class="language-plaintext highlighter-rouge">fastqsanger</code>.</p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Changing the datatype</h3>
-        <ul>
-          <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>
-          <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>
-          <li>Select <code class="language-plaintext highlighter-rouge">fastqsanger</code></li>
-          <li>Click the <strong>Change datatype</strong> button</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>    <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>    <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>    <li>Select <code class="language-plaintext highlighter-rouge">fastqsanger</code></li>    <li>Click the <strong>Change datatype</strong> button</li>  </ul></blockquote>
     </li>
     <li>
       <p>Add to each dataset a tag corresponding to the name of the sample (<code class="language-plaintext highlighter-rouge">#GSM461177</code> or <code class="language-plaintext highlighter-rouge">#GSM461180</code>)</p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-adding-a-tag"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Adding a tag</h3>
-        <ul>
-          <li>Click on the dataset</li>
-          <li>Click on <i class="fas fa-tags" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-tags</span> <strong>Edit dataset tags</strong></li>
-          <li>
-            <p>Add a tag starting with <code class="language-plaintext highlighter-rouge">#</code></p>
-
-            <p>Tags starting with <code class="language-plaintext highlighter-rouge">#</code> will be automatically propagated to the outputs of tools using this dataset.</p>
-          </li>
-          <li>Check that the tag is appearing below the dataset name</li>
-        </ul>
-
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-adding-a-tag"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Adding a tag</h3>  <ul>    <li>Click on the dataset</li>    <li>Click on <i class="fas fa-tags" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-tags</span> <strong>Edit dataset tags</strong></li>    <li>Add a tag starting with <code class="language-plaintext highlighter-rouge">#</code>  Tags starting with <code class="language-plaintext highlighter-rouge">#</code> will be automatically propagated to the outputs of tools using this dataset.</li>    <li>Check that the tag is appearing below the dataset name</li>  </ul></blockquote>
     </li>
   </ol>
 
@@ -1016,24 +1001,16 @@ https://zenodo.org/record/4541751/files/GSM461180_2_subsampled.fastqsanger
   <h3 id="hands_on-hands-on-quality-control"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Quality control</h3>
 
   <ol>
-    <li><strong>FastQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1"><strong>FastQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+<span class="notranslate">galaxy</span>1</span></span>  with the following parameters:
       <ul>
         <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Short read data from your current history”</em>: input datasets selected with <strong>Multiple datasets</strong></li>
       </ul>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-select-multiple-datasets"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Select multiple datasets</h3>
-
-        <ol>
-          <li>Click on <i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <strong>Multiple datasets</strong></li>
-          <li>Select several files by keeping the <kbd>Ctrl</kbd> (or
-<kbd>COMMAND</kbd>) key pressed and clicking on the files of interest</li>
-        </ol>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-select-multiple-datasets"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Select multiple datasets</h3>  <ol>    <li>Click on <i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <strong>Multiple datasets</strong></li>    <li>Select several files by keeping the <kbd>Ctrl</kbd> (or<kbd>COMMAND</kbd>) key pressed and clicking on the files of interest</li>  </ol></blockquote>
     </li>
     <li>
-      <p>Inspect the webpage output of <strong>FastQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> for the <code class="language-plaintext highlighter-rouge">GSM461177</code> sample</p>
+      <p>Inspect the webpage output of <strong>FastQC</strong> for the <code class="language-plaintext highlighter-rouge">GSM461177</code> sample</p>
 
       <blockquote class="question">
         <h3 id="question-questions-1"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
@@ -1049,7 +1026,7 @@ https://zenodo.org/record/4541751/files/GSM461180_2_subsampled.fastqsanger
 
       </blockquote>
     </li>
-    <li><strong>MultiQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters to aggregate the FastQC reports:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7"><strong>MultiQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7</span></span>  with the following parameters to aggregate the FastQC reports:
       <ul>
         <li>In <em>“Results”</em>
           <ul>
@@ -1057,7 +1034,7 @@ https://zenodo.org/record/4541751/files/GSM461180_2_subsampled.fastqsanger
             <li>In <em>“FastQC output”</em>
               <ul>
                 <li><em>“Type of FastQC output?”</em>: <code class="language-plaintext highlighter-rouge">Raw data</code></li>
-                <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“FastQC output”</em>: <code class="language-plaintext highlighter-rouge">Raw data</code> files (output of <strong>FastQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+                <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“FastQC output”</em>: <code class="language-plaintext highlighter-rouge">Raw data</code> files (output of <strong>FastQC</strong>)</li>
               </ul>
             </li>
           </ul>
@@ -1167,7 +1144,7 @@ https://zenodo.org/record/4541751/files/GSM461180_2_subsampled.fastqsanger
   <h3 id="hands_on-hands-on-quality-control-1"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Quality control</h3>
 
   <ol>
-    <li><strong>Cutadapt</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters to trim low quality sequences:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/1.16.5" title="Tested with toolshed.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/1.16.5"><strong>Cutadapt</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/lparsons/cutadapt/cutadapt/1.16.5</span></span>  with the following parameters to trim low quality sequences:
       <ul>
         <li><em>“Single-end or Paired-end <span class="notranslate">reads</span>?”</em>: <code class="language-plaintext highlighter-rouge">Paired-end</code>
           <ul>
@@ -1325,12 +1302,12 @@ https://zenodo.org/record/4541751/files/GSM461180_2_subsampled.fastqsanger
 
       </blockquote>
     </li>
-    <li><strong><span class="notranslate">RNA</span> STAR</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters to map your <span class="notranslate">reads</span> on the reference genome:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.8a" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.8a"><strong><span class="notranslate">RNA</span> STAR</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/rg<span class="notranslate">rna</span>star/<span class="notranslate">rna</span>_star/2.7.8a</span></span>  with the following parameters to map your <span class="notranslate">reads</span> on the reference genome:
       <ul>
         <li><em>“Single-end or paired-end <span class="notranslate">reads</span>”</em>: <code class="language-plaintext highlighter-rouge">Paired-end (as individual datasets)</code>
           <ul>
-            <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“<span class="notranslate">RNA</span>-Seq FASTQ/FASTA file, forward <span class="notranslate">reads</span>”</em>: the <code class="language-plaintext highlighter-rouge">Read 1 Output</code> (outputs of <strong>Cutadapt</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
-            <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“<span class="notranslate">RNA</span>-Seq FASTQ/FASTA file, reverse <span class="notranslate">reads</span>”</em>: the <code class="language-plaintext highlighter-rouge">Read 2 Output</code> (outputs of <strong>Cutadapt</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+            <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“<span class="notranslate">RNA</span>-Seq FASTQ/FASTA file, forward <span class="notranslate">reads</span>”</em>: the <code class="language-plaintext highlighter-rouge">Read 1 Output</code> (outputs of <strong>Cutadapt</strong>)</li>
+            <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“<span class="notranslate">RNA</span>-Seq FASTQ/FASTA file, reverse <span class="notranslate">reads</span>”</em>: the <code class="language-plaintext highlighter-rouge">Read 2 Output</code> (outputs of <strong>Cutadapt</strong>)</li>
           </ul>
         </li>
         <li><em>“Custom or built-in reference genome”</em>: <code class="language-plaintext highlighter-rouge">Use a built-in index</code>
@@ -1350,7 +1327,7 @@ https://zenodo.org/record/4541751/files/GSM461180_2_subsampled.fastqsanger
         </li>
       </ul>
     </li>
-    <li><strong>MultiQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to aggregate the STAR logs:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7"><strong>MultiQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7</span></span>  to aggregate the STAR logs:
       <ul>
         <li>In <em>“Results”</em>
           <ul>
@@ -1358,7 +1335,7 @@ https://zenodo.org/record/4541751/files/GSM461180_2_subsampled.fastqsanger
             <li>In <em>“STAR output”</em>
               <ul>
                 <li><em>“Type of STAR output?”</em>: <code class="language-plaintext highlighter-rouge">Log</code></li>
-                <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“STAR output”</em>: <code class="language-plaintext highlighter-rouge">log</code> files (output of <strong><span class="notranslate">RNA</span> STAR</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+                <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“STAR output”</em>: <code class="language-plaintext highlighter-rouge">log</code> files (output of <strong><span class="notranslate">RNA</span> STAR</strong>)</li>
               </ul>
             </li>
           </ul>
@@ -1521,9 +1498,9 @@ https://zenodo.org/record/4541751/files/GSM461180_2_subsampled.fastqsanger
   <h3 id="hands_on-hands-on-inspection-of-mapping-results"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Inspection of <span class="notranslate">mapping</span> results</h3>
 
   <ol>
-    <li>Install <a href="https://software.broadinstitute.org/software/igv/download">IGV</a> (if not already installed)</li>
+    <li>Install <a href="https://software.broadinstitute.org/software/igv/download"><strong>IGV</strong></a> (if not already installed)</li>
     <li>Start IGV locally</li>
-    <li>Expand the <i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <code class="language-plaintext highlighter-rouge">mapped.bam</code> file (output of <strong><span class="notranslate">RNA</span> STAR</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>) for <code class="language-plaintext highlighter-rouge">GSM461177</code></li>
+    <li>Expand the <i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <code class="language-plaintext highlighter-rouge">mapped.bam</code> file (output of <strong><span class="notranslate">RNA</span> STAR</strong>) for <code class="language-plaintext highlighter-rouge">GSM461177</code></li>
     <li>
       <p>Click on the <code class="language-plaintext highlighter-rouge">local</code> in <code class="language-plaintext highlighter-rouge">display with IGV local D. melanogaster (dm6)</code> to load the <span class="notranslate">reads</span> into the IGV browser</p>
 
@@ -1627,12 +1604,12 @@ installed on your machine. However, the questions in this section can also be an
     <h3 id="hands_on-hands-on-check-duplicate-reads"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Check duplicate <span class="notranslate">reads</span></h3>
 
     <ol>
-      <li><strong>MarkDuplicates</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>:
+      <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.18.2.2" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.18.2.2"><strong>MarkDuplicates</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/devteam/picard/picard_MarkDuplicates/2.18.2.2</span></span> :
         <ul>
-          <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Select SAM/BAM dataset or dataset collection”</em>: <code class="language-plaintext highlighter-rouge">mapped.bam</code> files (outputs of <strong><span class="notranslate">RNA</span> STAR</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+          <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Select SAM/BAM dataset or dataset collection”</em>: <code class="language-plaintext highlighter-rouge">mapped.bam</code> files (outputs of <strong><span class="notranslate">RNA</span> STAR</strong>)</li>
         </ul>
       </li>
-      <li><strong>MultiQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to aggregate the MarkDuplicates logs:
+      <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7"><strong>MultiQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7</span></span>  to aggregate the MarkDuplicates logs:
         <ul>
           <li>In <em>“Results”</em>
             <ul>
@@ -1640,7 +1617,7 @@ installed on your machine. However, the questions in this section can also be an
               <li>In <em>“Picard output”</em>
                 <ul>
                   <li><em>“Type of Picard output?”</em>: <code class="language-plaintext highlighter-rouge">Markdups</code></li>
-                  <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Picard output”</em>: <code class="language-plaintext highlighter-rouge">MarkDuplicate metrics</code> files (output of <strong>MarkDuplicates</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+                  <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Picard output”</em>: <code class="language-plaintext highlighter-rouge">MarkDuplicate metrics</code> files (output of <strong>MarkDuplicates</strong>)</li>
                 </ul>
               </li>
             </ul>
@@ -1676,7 +1653,7 @@ installed on your machine. However, the questions in this section can also be an
           <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“BAM file”</em>: <code class="language-plaintext highlighter-rouge">mapped.bam</code> files (outputs of <strong><span class="notranslate">RNA</span> STAR</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
         </ul>
       </li>
-      <li><strong>MultiQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to aggregate the idxstats logs:
+      <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7"><strong>MultiQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7</span></span>  to aggregate the idxstats logs:
         <ul>
           <li>In <em>“Results”</em>
             <ul>
@@ -1727,22 +1704,22 @@ installed on your machine. However, the questions in this section can also be an
     <h3 id="hands_on-hands-on-check-gene-body-coverage"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Check gene body coverage</h3>
 
     <ol>
-      <li><strong>Convert GTF to <span class="notranslate">BED</span>12</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to convert the GTF file to <span class="notranslate">BED</span>:
+      <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/gtftobed12/gtftobed12/357" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/gtftobed12/gtftobed12/357"><strong>Convert GTF to <span class="notranslate">BED</span>12</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/gtftobed12/gtftobed12/357</span></span>  to convert the GTF file to <span class="notranslate">BED</span>:
         <ul>
           <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“GTF File to convert”</em>: <code class="language-plaintext highlighter-rouge">Drosophila_melanogaster.BDGP6.87.gtf</code></li>
         </ul>
       </li>
-      <li><strong>Gene Body Coverage (BAM)</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>:
+      <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_geneBody_coverage/2.6.4.3" title="Tested with toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_geneBody_coverage/2.6.4.3"><strong>Gene Body Coverage (BAM)</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_geneBody_coverage/2.6.4.3</span></span> :
         <ul>
           <li><em>“Run each sample separately, or combine mutiple samples into one plot”</em>: <code class="language-plaintext highlighter-rouge">Run each sample separately</code>
             <ul>
-              <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Input .bam file”</em>: <code class="language-plaintext highlighter-rouge">mapped.bam</code> files (outputs of <strong><span class="notranslate">RNA</span> STAR</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+              <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Input .bam file”</em>: <code class="language-plaintext highlighter-rouge">mapped.bam</code> files (outputs of <strong><span class="notranslate">RNA</span> STAR</strong>)</li>
             </ul>
           </li>
-          <li><em>“Reference gene model”</em>: <span class="notranslate">BED</span>12 file (output <strong>Convert GTF to <span class="notranslate">BED</span>12</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+          <li><em>“Reference gene model”</em>: <span class="notranslate">BED</span>12 file (output <strong>Convert GTF to <span class="notranslate">BED</span>12</strong>)</li>
         </ul>
       </li>
-      <li><strong>MultiQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to aggregate the idxstats logs:
+      <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7"><strong>MultiQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7</span></span>  to aggregate the idxstats logs:
         <ul>
           <li>In <em>“Results”</em>
             <ul>
@@ -1750,7 +1727,7 @@ installed on your machine. However, the questions in this section can also be an
               <li>In <em>“RSeQC output”</em>
                 <ul>
                   <li><em>“Type of RSeQC output?”</em>: <code class="language-plaintext highlighter-rouge">gene_body_coverage</code></li>
-                  <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“RSeQC gene_body_coverage output”</em>: <code class="language-plaintext highlighter-rouge">(text)</code> files (outputs of <strong>Gene Body Coverage (BAM)</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+                  <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“RSeQC gene_body_coverage output”</em>: <code class="language-plaintext highlighter-rouge">(text)</code> files (outputs of <strong>Gene Body Coverage (BAM)</strong>)</li>
                 </ul>
               </li>
             </ul>
@@ -1784,13 +1761,13 @@ installed on your machine. However, the questions in this section can also be an
     <h3 id="hands_on-hands-on-check-the-number-of-reads-mapped-to-each-chromosome-1"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Check the number of <span class="notranslate">reads</span> mapped to each chromosome</h3>
 
     <ol>
-      <li><strong>Read Distribution</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>:
+      <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_read_distribution/2.6.4.1" title="Tested with toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_read_distribution/2.6.4.1"><strong>Read Distribution</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_read_distribution/2.6.4.1</span></span> :
         <ul>
-          <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Input .bam/.sam file”</em>: <code class="language-plaintext highlighter-rouge">mapped.bam</code> files (outputs of <strong><span class="notranslate">RNA</span> STAR</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
-          <li><em>“Reference gene model”</em>: <span class="notranslate">BED</span>12 file (output <strong>Convert GTF to <span class="notranslate">BED</span>12</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+          <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Input .bam/.sam file”</em>: <code class="language-plaintext highlighter-rouge">mapped.bam</code> files (outputs of <strong><span class="notranslate">RNA</span> STAR</strong>)</li>
+          <li><em>“Reference gene model”</em>: <span class="notranslate">BED</span>12 file (output <strong>Convert GTF to <span class="notranslate">BED</span>12</strong>)</li>
         </ul>
       </li>
-      <li><strong>MultiQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to aggregate the idxstats logs:
+      <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7"><strong>MultiQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7</span></span>  to aggregate the idxstats logs:
         <ul>
           <li>In <em>“Results”</em>
             <ul>
@@ -1798,7 +1775,7 @@ installed on your machine. However, the questions in this section can also be an
               <li>In <em>“RSeQC output”</em>
                 <ul>
                   <li><em>“Type of RSeQC output?”</em>: <code class="language-plaintext highlighter-rouge">read_distribution</code></li>
-                  <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“RSeQC read_distribution output”</em>: outputs of <strong>Read Distribution</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+                  <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“RSeQC read_distribution output”</em>: outputs of <strong>Read Distribution</strong></li>
                 </ul>
               </li>
             </ul>
@@ -1937,15 +1914,15 @@ installed on your machine. However, the questions in this section can also be an
   <h3 id="hands_on-hands-on-determining-the-library-strandness"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Determining the library strandness</h3>
 
   <ol>
-    <li><strong>Convert GTF to <span class="notranslate">BED</span>12</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to convert the GTF file to <span class="notranslate">BED</span>:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/gtftobed12/gtftobed12/357" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/gtftobed12/gtftobed12/357"><strong>Convert GTF to <span class="notranslate">BED</span>12</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/gtftobed12/gtftobed12/357</span></span>  to convert the GTF file to <span class="notranslate">BED</span>:
       <ul>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“GTF File to convert”</em>: <code class="language-plaintext highlighter-rouge">Drosophila_melanogaster.BDGP6.87.gtf</code></li>
       </ul>
     </li>
-    <li><strong>Infer Experiment</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to determine the library strandness with:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/2.6.4.1" title="Tested with toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/2.6.4.1"><strong>Infer Experiment</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/2.6.4.1</span></span>  to determine the library strandness with:
       <ul>
-        <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Input .bam file”</em>: <code class="language-plaintext highlighter-rouge">mapped.bam</code> files (outputs of <strong><span class="notranslate">RNA</span> STAR</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
-        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Reference gene model”</em>: <span class="notranslate">BED</span>12 file (output <strong>Convert GTF to <span class="notranslate">BED</span>12</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+        <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Input .bam file”</em>: <code class="language-plaintext highlighter-rouge">mapped.bam</code> files (outputs of <strong><span class="notranslate">RNA</span> STAR</strong>)</li>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Reference gene model”</em>: <span class="notranslate">BED</span>12 file (output <strong>Convert GTF to <span class="notranslate">BED</span>12</strong>)</li>
         <li><em>“Number of <span class="notranslate">reads</span> sampled from SAM/BAM file (default = 200000)”</em>: <code class="language-plaintext highlighter-rouge">200000</code></li>
       </ul>
     </li>
@@ -1953,7 +1930,7 @@ installed on your machine. However, the questions in this section can also be an
 
 </blockquote>
 
-<p><strong>Infer Experiment</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> tool generates one file with information on:</p>
+<p><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/2.6.4.1" title="Tested with toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/2.6.4.1"><strong>Infer Experiment</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/2.6.4.1</span></span>  tool generates one file with information on:</p>
 
 <ul>
   <li>Paired-end or single-end library</li>
@@ -2077,9 +2054,9 @@ Fraction of <span class="notranslate">reads</span> explained by "1+-,1-+,2++,2--
   <h3 id="hands_on-hands-on-counting-the-number-of-reads-per-annotated-gene"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Counting the number of <span class="notranslate">reads</span> per annotated gene</h3>
 
   <ol>
-    <li><strong>featureCounts</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to count the number of <span class="notranslate">reads</span> per gene:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.0.1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.0.1"><strong>featureCounts</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.0.1</span></span>  to count the number of <span class="notranslate">reads</span> per gene:
       <ul>
-        <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Alignment file”</em>: <code class="language-plaintext highlighter-rouge">mapped.bam</code> files (outputs of <strong><span class="notranslate">RNA</span> STAR</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+        <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Alignment file”</em>: <code class="language-plaintext highlighter-rouge">mapped.bam</code> files (outputs of <strong><span class="notranslate">RNA</span> STAR</strong>)</li>
         <li><em>“Specify strand information”</em>: <code class="language-plaintext highlighter-rouge">Unstranded</code></li>
         <li><em>“Gene annotation file”</em>: <code class="language-plaintext highlighter-rouge">in your history</code>
           <ul>
@@ -2097,20 +2074,19 @@ Fraction of <span class="notranslate">reads</span> explained by "1+-,1-+,2++,2--
           <ul>
             <li><em>“GFF feature type filter”</em>: <code class="language-plaintext highlighter-rouge">exon</code></li>
             <li><em>“GFF gene identifier”</em>: <code class="language-plaintext highlighter-rouge">gene_id</code></li>
-            <li><em>“Allow read to contribute to multiple features”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
-            <li><em>“Count multi-<span class="notranslate">mapping</span> <span class="notranslate">reads</span>/fragments”</em>: <code class="language-plaintext highlighter-rouge">Disabled; multi-<span class="notranslate">mapping</span> <span class="notranslate">reads</span> are excluded (default)</code></li>
+            <li><em>“Allow <span class="notranslate">reads</span> to map to multiple features”</em>: <code class="language-plaintext highlighter-rouge">Disabled; <span class="notranslate">reads</span> that align to multiple features or overlapping features are excluded</code></li>
             <li><em>“Minimum <span class="notranslate">mapping</span> quality per read”</em>: <code class="language-plaintext highlighter-rouge">10</code></li>
           </ul>
         </li>
       </ul>
     </li>
-    <li><strong>MultiQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to aggregate the report:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7"><strong>MultiQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.7</span></span>  to aggregate the report:
       <ul>
         <li>In <em>“Results”</em>:
           <ul>
             <li><em>“Which tool was used generate logs?”</em>: <code class="language-plaintext highlighter-rouge">featureCounts</code>
               <ul>
-                <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Output of FeatureCounts”</em>: <code class="language-plaintext highlighter-rouge">summary</code> files (outputs of <strong>featureCounts</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+                <li><i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <em>“Output of FeatureCounts”</em>: <code class="language-plaintext highlighter-rouge">summary</code> files (outputs of <strong>featureCounts</strong>)</li>
               </ul>
             </li>
           </ul>
@@ -2158,7 +2134,7 @@ Fraction of <span class="notranslate">reads</span> explained by "1+-,1-+,2++,2--
   <blockquote class="solution">
     <h3 id="solution-solution-18"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
 
-    <p>To display the most abundantly detected feature, we need to sort the table of counts. This can be done using the <strong>Sort</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> tool:</p>
+    <p>To display the most abundantly detected feature, we need to sort the table of counts. This can be done using the <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool/1.1.1" title="Tested with toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool/1.1.1"><strong>Sort</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/bgruening/text_processing/tp_sort_header_tool/1.1.1</span></span>  tool:</p>
     <ul>
       <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Sort Query”</em>: count file, output of by <strong>featureCounts</strong></li>
       <li><em>“Number of header”</em>: <code class="language-plaintext highlighter-rouge">1</code></li>
@@ -2226,7 +2202,7 @@ Fraction of <span class="notranslate">reads</span> explained by "1+-,1-+,2++,2--
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-optional-hands-on-re-run-on-the-other-datasets"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> (Optional) Hands-on: Re-run on the other datasets</h3>
 
-  <p>You can do the same process on the other sequence files available on <a href="https://zenodo.org/record/4541751">Zenodo</a> and on the data library</p>
+  <p>You can do the same process on the other sequence files available on <a href="https://zenodo.org/record/4541751">Zenodo</a> and on the data library.</p>
 
   <ul>
     <li>Paired-end data
@@ -3067,7 +3043,7 @@ https://zenodo.org/record/4541751/files/GSM461182_untreat_single.counts
 
 </blockquote>
 
-<p>DESeq2 runs also the Differential Gene <span class="notranslate">Expression</span> (DGE) analysis, whose two basic tasks are:</p>
+<p>DESeq2 also runs the Differential Gene <span class="notranslate">Expression</span> (DGE) analysis, whose two basic tasks are:</p>
 
 <ul>
   <li>Estimate the biological variance using the replicates for each condition</li>
@@ -3086,7 +3062,7 @@ https://zenodo.org/record/4541751/files/GSM461182_untreat_single.counts
   <p>We recommend to combine the count tables for different technical replicates (but not for biological replicates) before a differential <span class="notranslate">expression</span> analysis (see <a href="http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#collapsing-technical-replicates">DESeq2 documentation</a>)</p>
 </blockquote>
 
-<p>Multiple factors with several levels can then be incorporated in the analysis describing known sources of variation (e.g. treatment, tissue type, gender, batches), with several levels representing the conditions for one factor. After normalization we can compare the response of the <span class="notranslate">expression</span> of any gene to the presence of different levels of a factor in a statistically reliable way.</p>
+<p>Multiple factors with several levels can then be incorporated in the analysis describing known sources of variation (e.g. treatment, tissue type, gender, batches), with two or more levels representing the conditions for each factor. After normalization we can compare the response of the <span class="notranslate">expression</span> of any gene to the presence of different levels of a factor in a statistically reliable way.</p>
 
 <p>In our example, we have samples with two varying factors that can contribute to differences in gene <span class="notranslate">expression</span>:</p>
 
@@ -3107,7 +3083,7 @@ https://zenodo.org/record/4541751/files/GSM461182_untreat_single.counts
   <h3 id="hands_on-hands-on-determine-differentially-expressed-features"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Determine differentially expressed features</h3>
 
   <ol>
-    <li><strong>DESeq2</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.6+galaxy1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.6+galaxy1"><strong>DESeq2</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/deseq2/deseq2/2.11.40.6+<span class="notranslate">galaxy</span>1</span></span>  with the following parameters:
       <ul>
         <li><em>“how”</em>: <code class="language-plaintext highlighter-rouge">Select datasets per level</code>
           <ul>
@@ -3153,16 +3129,8 @@ https://zenodo.org/record/4541751/files/GSM461182_untreat_single.counts
         <li><em>“Output normalized counts table”</em>: <code class="language-plaintext highlighter-rouge">Yes</code></li>
       </ul>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-select-multiple-datasets-1"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Select multiple datasets</h3>
-
-        <ol>
-          <li>Click on <i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <strong>Multiple datasets</strong></li>
-          <li>Select several files by keeping the <kbd>Ctrl</kbd> (or
-<kbd>COMMAND</kbd>) key pressed and clicking on the files of interest</li>
-        </ol>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-select-multiple-datasets"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Select multiple datasets</h3>  <ol>    <li>Click on <i class="far fa-copy" aria-hidden="true"></i><span class="visually-hidden">param-files</span> <strong>Multiple datasets</strong></li>    <li>Select several files by keeping the <kbd>Ctrl</kbd> (or<kbd>COMMAND</kbd>) key pressed and clicking on the files of interest</li>  </ol></blockquote>
 
       <blockquote class="comment">
         <h3 id="comment-comment-using-group-tags-for-large-sample-sets"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Comment: Using group tags for large sample sets</h3>
@@ -3241,7 +3209,7 @@ may be a lot of work. In these situations, <strong>group tags</strong> can make 
 
           <blockquote class="solution">
             <h3 id="solution-solution-20"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
-            <p>They are first grouped by the treatment (the first factor) and secondly by the library type (the second factor), as in the PCA plot.</p>
+            <p>They are first grouped by the treatment (the first factor) and secondly by the sequencing type (the second factor), as in the PCA plot.</p>
 
           </blockquote>
         </blockquote>
@@ -3297,8 +3265,7 @@ may be a lot of work. In these situations, <strong>group tags</strong> can make 
     <ol>
       <li>FBgn0003360 is differentially expressed because of the treatment: it has a significant adjusted p-value (\(4.0 \cdot 10^{-178} &lt;&lt; 0.05\)). It is less expressed (<code class="language-plaintext highlighter-rouge">-</code> in the log2FC column) in treated samples compared to untreated samples, by a factor ~8 (\(2^{log2FC} = 2^{2.99977727873544}\)).</li>
       <li>DESeq2 in <span class="notranslate">Galaxy</span> returns the comparison between the different levels for the 1st factor, after
-correction for the variability due to the 2nd factor. In our current case, treated against untreated for any sequencing type. To compare both sequencing types, we should run again DESeq2 by switching
-both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) becomes factor 1.</li>
+correction for the variability due to the 2nd factor. In our current case, treated against untreated for any sequencing type. To compare sequencing types, we should run DESeq2 again switching factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) becomes factor 1.</li>
       <li>To add the interaction between two factors (e.g. treated for paired-end data vs untreated for single-end), we should run DESeq2 another time but with only one factor with the following 4 levels:
         <ul>
           <li>treated-PE</li>
@@ -3322,7 +3289,7 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
   <h3 id="hands_on-hands-on-extract-the-most-differentially-expressed-genes"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Extract the most differentially expressed genes</h3>
 
   <ol>
-    <li><strong>Filter data on any column using simple <span class="notranslate">expression</span>s</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to extract genes with a significant change in gene <span class="notranslate">expression</span> (adjusted <em>p</em>-value below 0.05) between treated and untreated samples:
+    <li><span class="tool" data-tool="Filter1" title="Tested with Filter1"><strong>Filter data on any column using simple <span class="notranslate">expression</span>s</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: Filter1</span></span>  to extract genes with a significant change in gene <span class="notranslate">expression</span> (adjusted <em>p</em>-value below 0.05) between treated and untreated samples:
       <ul>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Filter”</em>: the <code class="language-plaintext highlighter-rouge">DESeq2 result file</code></li>
         <li><em>“With following condition”</em>: <code class="language-plaintext highlighter-rouge">c7&lt;0.05</code></li>
@@ -3352,7 +3319,7 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
 
       <p>We will now select only the genes with an absolute fold change (FC) &gt; 2</p>
     </li>
-    <li><strong>Filter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to extract genes with an \(abs(log_{2} FC) &gt; 1\):
+    <li><span class="tool" data-tool="Filter1" title="Tested with Filter1"><strong>Filter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: Filter1</span></span>  to extract genes with an \(abs(log_{2} FC) &gt; 1\):
       <ul>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Filter”</em>: <code class="language-plaintext highlighter-rouge">Genes with significant adj p-value</code></li>
         <li><em>“With following condition”</em>: <code class="language-plaintext highlighter-rouge">abs(c3)&gt;1</code></li>
@@ -3390,7 +3357,7 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
 </code></pre></div>      </div>
     </li>
     <li>
-      <p><strong>Annotate DESeq2/DEXSeq output tables</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with:</p>
+      <p><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/deg_annotate/deg_annotate/1.1.0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/deg_annotate/deg_annotate/1.1.0"><strong>Annotate DESeq2/DEXSeq output tables</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/deg_annotate/deg_annotate/1.1.0</span></span>  with:</p>
       <ul>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Tabular output of DESeq2/edgeR/limma/DEXSeq”</em>: output of the last <strong>Filter</strong></li>
         <li><em>“Input file type”</em>: <code class="language-plaintext highlighter-rouge">DESeq2/edgeR/limma</code></li>
@@ -3449,26 +3416,12 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
       <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GeneID	Base mean	log2(FC)	StdErr	Wald-Stats	P-value	P-adj	Chromosome	Start	End	Strand	Feature	Gene name
 </code></pre></div>      </div>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-creating-a-new-file"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Creating a new file</h3>
-
-        <ul>
-          <li>Open the <span class="notranslate">Galaxy</span> Upload Manager</li>
-          <li>Select <strong>Paste/Fetch Data</strong></li>
-          <li>
-            <p>Paste the file contents into the text field</p>
-          </li>
-          <li>
-            <p>Change <strong>Type</strong> from “Auto-detect” to <code class="language-plaintext highlighter-rouge">tabular</code></p>
-          </li>
-          <li>Press <strong>Start</strong> and <strong>Close</strong> the window</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-file"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new file</h3>  <ul>    <li>Open the <span class="notranslate">Galaxy</span> Upload Manager</li>    <li>Select <strong>Paste/Fetch Data</strong></li>    <li>Paste the file contents into the text field* Change <strong>Type</strong> from “Auto-detect” to <code class="language-plaintext highlighter-rouge">tabular</code></li>    <li>Press <strong>Start</strong> and <strong>Close</strong> the window</li>  </ul></blockquote>
     </li>
-    <li><strong>Concatenate datasets</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to add this header line to the <strong>Annotate</strong> output:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cat/0.1.0" title="Tested with toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cat/0.1.0"><strong>Concatenate datasets</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cat/0.1.0</span></span>  to add this header line to the <strong>Annotate</strong> output:
       <ul>
-        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Concatenate Dataset”</em>: <code class="language-plaintext highlighter-rouge">Pasted entry</code> dataset</li>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Concatenate Dataset”</em>: the <code class="language-plaintext highlighter-rouge">Pasted entry</code> dataset</li>
         <li><em>“Dataset”</em>
           <ul>
             <li>Click on <i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <em>“Insert Dataset”</em>
@@ -3512,9 +3465,9 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-extract-the-normalized-counts-of-the-most-differentially-expressed-genes"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Extract the normalized counts of the most differentially expressed genes</h3>
   <ol>
-    <li><strong>Join two Datasets</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/join/gops_join_1/1.0.0" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/join/gops_join_1/1.0.0"><strong>Join two Datasets</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/devteam/join/gops_join_1/1.0.0</span></span>  with the following parameters:
       <ul>
-        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Join”</em>: the <code class="language-plaintext highlighter-rouge">Normalized counts</code> file (output of <strong>DESeq2</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Join”</em>: the <code class="language-plaintext highlighter-rouge">Normalized counts</code> file (output of <strong>DESeq2</strong>)</li>
         <li><em>“using column”</em>: <code class="language-plaintext highlighter-rouge">Column: 1</code></li>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“with”</em>: <code class="language-plaintext highlighter-rouge">Genes with significant adj p-value &amp; abs(FC) &gt; 2</code></li>
         <li><em>“and column”</em>: <code class="language-plaintext highlighter-rouge">Column: 1</code></li>
@@ -3524,11 +3477,11 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
 
       <p>The generated file has more columns than we need for the heatmap: mean normalized counts, \(log_{2} FC\) and other annotation information. We need to remove the extra columns.</p>
     </li>
-    <li><strong>Cut</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to extract the columns with the gene IDs and normalized counts:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0" title="Tested with toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0"><strong>Cut</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0</span></span>  to extract the columns with the gene IDs and normalized counts:
       <ul>
         <li><em>“Cut columns”</em>: <code class="language-plaintext highlighter-rouge">c1-c8</code></li>
         <li><em>“Delimited by”</em>: <code class="language-plaintext highlighter-rouge">Tab</code></li>
-        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“From”</em>: the joined dataset (output of <strong>Join two Datasets</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“From”</em>: the joined dataset (output of <strong>Join two Datasets</strong>)</li>
       </ul>
     </li>
     <li>Rename the output to <code class="language-plaintext highlighter-rouge">Normalized counts for the most differentially expressed genes</code></li>
@@ -3541,7 +3494,7 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
   <h3 id="hands_on-hands-on-plot-the-heatmap-of-the-normalized-counts-of-these-genes-for-the-samples"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Plot the heatmap of the normalized counts of these genes for the samples</h3>
 
   <ol>
-    <li><strong>heatmap2</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to plot the heatmap:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_heatmap2/ggplot2_heatmap2/3.0.1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_heatmap2/ggplot2_heatmap2/3.0.1"><strong>heatmap2</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/ggplot2_heatmap2/ggplot2_heatmap2/3.0.1</span></span>  to plot the heatmap:
       <ul>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Input should have column headers”</em>: <code class="language-plaintext highlighter-rouge">Normalized counts for the most differentially expressed genes</code></li>
         <li><em>“Advanced - log transformation”</em>/<em>“Data transformation”</em>: <code class="language-plaintext highlighter-rouge">Log2(value) transform my data</code></li>
@@ -3573,7 +3526,7 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
     <ol>
       <li>The samples are clustering by treatment.</li>
       <li>The scale changes and the differences between the genes are not visible anymore.</li>
-      <li>Extract the genes with \(log_{2} FC\) &gt; 1 (filter for genes with <code class="language-plaintext highlighter-rouge">c3&gt;1</code> on the summary of the differentially expressed genes) and run <strong>heatmap2</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> on the generated table.</li>
+      <li>Extract the genes with \(log_{2} FC\) &gt; 1 (filter for genes with <code class="language-plaintext highlighter-rouge">c3&gt;1</code> on the summary of the differentially expressed genes) and run <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_heatmap2/ggplot2_heatmap2/3.0.1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_heatmap2/ggplot2_heatmap2/3.0.1"><strong>heatmap2</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/ggplot2_heatmap2/ggplot2_heatmap2/3.0.1</span></span>  on the generated table.</li>
     </ol>
   </blockquote>
 </blockquote>
@@ -3602,7 +3555,7 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-compute-and-extract-the-z-score-of-the-most-differentially-expressed-genes"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Compute and extract the Z-score of the most differentially expressed genes</h3>
   <ol>
-    <li><strong>Table Compute</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters to first substract the mean values per row
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/table_compute/table_compute/1.2.4+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/table_compute/table_compute/1.2.4+galaxy0"><strong>Table Compute</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/table_compute/table_compute/1.2.4+<span class="notranslate">galaxy</span>0</span></span>  with the following parameters to first substract the mean values per row
       <ul>
         <li><em>“Input Single or Multiple Tables”</em>: <code class="language-plaintext highlighter-rouge">Single Table</code>
           <ul>
@@ -3624,7 +3577,7 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
         </li>
       </ul>
     </li>
-    <li><strong>Table Compute</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/table_compute/table_compute/1.2.4+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/table_compute/table_compute/1.2.4+galaxy0"><strong>Table Compute</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/table_compute/table_compute/1.2.4+<span class="notranslate">galaxy</span>0</span></span>  with the following parameters:
       <ul>
         <li><em>“Input Single or Multiple Tables”</em>: <code class="language-plaintext highlighter-rouge">Multiple Table</code>
           <ul>
@@ -3692,7 +3645,7 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-plot-the-z-score-of-the-most-differentially-expressed-genes"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Plot the Z-score of the most differentially expressed genes</h3>
   <ol>
-    <li><strong>heatmap2</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to plot the heatmap:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_heatmap2/ggplot2_heatmap2/3.0.1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/ggplot2_heatmap2/ggplot2_heatmap2/3.0.1"><strong>heatmap2</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/ggplot2_heatmap2/ggplot2_heatmap2/3.0.1</span></span>  to plot the heatmap:
       <ul>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Input should have column headers”</em>: <code class="language-plaintext highlighter-rouge">Z-scores for the most differentially expressed genes</code></li>
         <li><em>“Advanced - log transformation”</em>/<em>“Data transformation”</em>: <code class="language-plaintext highlighter-rouge">Plot the data as it is</code></li>
@@ -3712,7 +3665,7 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
 
 <p><a href="http://www.geneontology.org/">Gene Ontology (GO)</a> analysis is widely used to reduce complexity and highlight biological processes in genome-wide <span class="notranslate">expression</span> studies. However, standard methods give biased results on <span class="notranslate">RNA</span>-Seq data due to over-detection of differential <span class="notranslate">expression</span> for long and highly-expressed transcripts.</p>
 
-<p><a href="https://bioconductor.org/packages/release/bioc/vignettes/goseq/inst/doc/goseq.pdf"><strong>goseq</strong></a> (<a class="citation" href="#young2010gene">Young <i>et al.</i> 2010</a>) provides methods for performing GO analysis of <span class="notranslate">RNA</span>-Seq data while taking length bias into account. <strong>goseq</strong> could also be applied to other category based tests of <span class="notranslate">RNA</span>-Seq data, such as KEGG pathway analysis, as discussed in a further section.</p>
+<p><a href="https://bioconductor.org/packages/release/bioc/vignettes/goseq/inst/doc/goseq.pdf"><strong>goseq</strong></a> (<a class="citation" href="#young2010gene">Young <i>et al.</i> 2010</a>) provides methods for performing GO analysis of <span class="notranslate">RNA</span>-Seq data while taking length bias into account. <strong>goseq</strong> could also be applied to other category-based tests of <span class="notranslate">RNA</span>-Seq data, such as KEGG pathway analysis, as discussed in a further section.</p>
 
 <p><strong>goseq</strong> needs 2 files as inputs:</p>
 
@@ -3730,22 +3683,22 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
   <h3 id="hands_on-hands-on-prepare-the-datasets-for-goseq"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Prepare the datasets for goseq</h3>
 
   <ol>
-    <li><strong>Compute</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/column_maker/Add_a_column1/1.6" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/column_maker/Add_a_column1/1.6"><strong>Compute</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/devteam/column_maker/Add_a_column1/1.6</span></span>  with
       <ul>
         <li><em>“Add <span class="notranslate">expression</span>”</em>: <code class="language-plaintext highlighter-rouge">bool(c7&lt;0.05)</code></li>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“as a new column to”</em>: the <code class="language-plaintext highlighter-rouge">DESeq2 result file</code></li>
       </ul>
     </li>
-    <li><strong>Cut</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0" title="Tested with toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0"><strong>Cut</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0</span></span>  with
       <ul>
         <li><em>“Cut columns”</em>: <code class="language-plaintext highlighter-rouge">c1,c8</code></li>
         <li><em>“Delimited by”</em>: <code class="language-plaintext highlighter-rouge">Tab</code></li>
-        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“From”</em>: the output of the <strong>Compute</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span></li>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“From”</em>: the output of the <strong>Compute</strong></li>
       </ul>
     </li>
-    <li><strong>Change Case</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with
+    <li><span class="tool" data-tool="ChangeCase" title="Tested with ChangeCase"><strong>Change Case</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: ChangeCase</span></span>  with
       <ul>
-        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“From”</em>: the output of the previous <strong>Cut</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span></li>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“From”</em>: the output of the previous <strong>Cut</strong></li>
         <li><em>“Change case of columns”</em>: <code class="language-plaintext highlighter-rouge">c1</code></li>
         <li><em>“Delimited by”</em>: <code class="language-plaintext highlighter-rouge">Tab</code></li>
         <li><em>“To”</em>: <code class="language-plaintext highlighter-rouge">Upper case</code></li>
@@ -3754,14 +3707,14 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
     <li>
       <p>Rename the output to <code class="language-plaintext highlighter-rouge">Gene IDs and differentially <span class="notranslate">expression</span></code></p>
 
-      <p>We just generated the first input for <strong>goseq</strong>. As second input for <strong>goseq</strong> we need the gene lengths. We can use here the gene lengths generated by <strong>featureCounts</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> and format the gene IDs.</p>
+      <p>We just generated the first input for <strong>goseq</strong>. As second input for <strong>goseq</strong> we need the gene lengths. We can use here the gene lengths generated by <strong>featureCounts</strong> and format the gene IDs.</p>
     </li>
     <li>
-      <p>Drag and drop one of the gene length file generated by <strong>featureCounts</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> into this history using the <i class="fas fa-columns" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-columns</span> <strong>View all histories</strong></p>
+      <p>Drag and drop one of the feature length datasets generated by <strong>featureCounts</strong> into this history using the <i class="fas fa-columns" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-columns</span> <strong>View all histories</strong></p>
     </li>
-    <li><strong>Change Case</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with
+    <li><span class="tool" data-tool="ChangeCase" title="Tested with ChangeCase"><strong>Change Case</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: ChangeCase</span></span>  with
       <ul>
-        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“From”</em>: the <code class="language-plaintext highlighter-rouge">feature lengths</code> (output of <strong>featureCounts</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“From”</em>: the <code class="language-plaintext highlighter-rouge">feature lengths</code> (output of <strong>featureCounts</strong>)</li>
         <li><em>“Change case of columns”</em>: <code class="language-plaintext highlighter-rouge">c1</code></li>
         <li><em>“Delimited by”</em>: <code class="language-plaintext highlighter-rouge">Tab</code></li>
         <li><em>“To”</em>: <code class="language-plaintext highlighter-rouge">Upper case</code></li>
@@ -3777,7 +3730,7 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
   <h3 id="hands_on-hands-on-perform-go-analysis"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Perform GO analysis</h3>
 
   <ol>
-    <li><strong>goseq</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/goseq/goseq/1.36.0+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/goseq/goseq/1.36.0+galaxy0"><strong>goseq</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/goseq/goseq/1.36.0+<span class="notranslate">galaxy</span>0</span></span>  with
       <ul>
         <li><em>“Differentially expressed genes file”</em>: <code class="language-plaintext highlighter-rouge">Gene IDs and differentially <span class="notranslate">expression</span></code></li>
         <li><em>“Gene lengths file”</em>: <code class="language-plaintext highlighter-rouge">Gene IDs and length</code></li>
@@ -3815,7 +3768,7 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
       <li><code class="language-plaintext highlighter-rouge">term</code>: detail of the term</li>
       <li><code class="language-plaintext highlighter-rouge">ontology</code>: MF (Molecular Function - molecular activities of gene products), CC (Cellular Component - where gene products are active), BP (Biological Process - pathways and larger processes made up of the activities of multiple gene products)</li>
       <li><code class="language-plaintext highlighter-rouge">p.adjust.over_represented</code>: <em>p</em>-value for over-representation of the term in the differentially expressed genes, adjusted for multiple testing with the Benjamini-Hochberg procedure</li>
-      <li><code class="language-plaintext highlighter-rouge">p.adjust.under_represented</code>: <em>p</em>-value for over-representation of the term in the differentially expressed genes, adjusted for multiple testing with the Benjamini-Hochberg procedure</li>
+      <li><code class="language-plaintext highlighter-rouge">p.adjust.under_represented</code>: <em>p</em>-value for under-representation of the term in the differentially expressed genes, adjusted for multiple testing with the Benjamini-Hochberg procedure</li>
     </ol>
 
     <p>To identify categories significantly enriched/unenriched below some p-value cutoff, it is necessary to use the adjusted <em>p</em>-value.</p>
@@ -3835,12 +3788,12 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
           <li>
             <p>31 GO terms (0.27%) are over-represented and 83 (0.72%) under-represented</p>
 
-            <p><strong>Filter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> on c8 (adjusted p-value for over-represented GO terms) and c9 (adjusted p-value for under-represented GO terms)</p>
+            <p><span class="tool" data-tool="Filter1" title="Tested with Filter1"><strong>Filter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: Filter1</span></span>  on c8 (adjusted p-value for over-represented GO terms) and c9 (adjusted p-value for under-represented GO terms)</p>
           </li>
           <li>
             <p>For over-represented, 20 BP, 3 CC and 8 MF and for under-represented, 49 BP, 29 CC and 5 MF</p>
 
-            <p><strong>Group data</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> on column 7 (category) and count on column 1 (IDs)</p>
+            <p><span class="tool" data-tool="Grouping1" title="Tested with Grouping1"><strong>Group data</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: Grouping1</span></span>  on column 7 (category) and count on column 1 (IDs)</p>
           </li>
         </ol>
 
@@ -3888,7 +3841,7 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
   <h3 id="hands_on-hands-on-perform-go-analysis-1"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Perform GO analysis</h3>
 
   <ol>
-    <li><strong>goseq</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/goseq/goseq/1.36.0+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/goseq/goseq/1.36.0+galaxy0"><strong>goseq</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/goseq/goseq/1.36.0+<span class="notranslate">galaxy</span>0</span></span>  with
       <ul>
         <li><em>“Differentially expressed genes file”</em>: <code class="language-plaintext highlighter-rouge">Gene IDs and differentially <span class="notranslate">expression</span></code></li>
         <li><em>“Gene lengths file”</em>: <code class="language-plaintext highlighter-rouge">Gene IDs and length</code></li>
@@ -3932,9 +3885,9 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
 
         <ol>
           <li>The file has 127 lines including an header, so 126 KEGG pathways have been identified.</li>
-          <li>2 KEGG pathways (1.57%) are over-represented, using <strong>Filter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> on c6 (adjusted p-value for over-represented KEGG pathways)</li>
+          <li>2 KEGG pathways (1.57%) are over-represented, using <strong>Filter</strong> on c6 (adjusted p-value for over-represented KEGG pathways)</li>
           <li>The first 2 KEGG pathways are <code class="language-plaintext highlighter-rouge">01100</code> and <code class="language-plaintext highlighter-rouge">00010</code>. By searching on the <a href="https://www.genome.jp/kegg/kegg2.html">KEGG database</a> for them, we can find more information about these pathways: <code class="language-plaintext highlighter-rouge">01100</code> corresponds to all metabolic pathways and <code class="language-plaintext highlighter-rouge">00010</code> to pathway for Glycolysis / Gluconeogenesis.</li>
-          <li>1 KEGG pathways (0.79%) is under-represented, using <strong>Filter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> on c7 (adjusted p-value for under-represented KEGG pathways): <code class="language-plaintext highlighter-rouge">03040</code>, Spliceosome</li>
+          <li>1 KEGG pathways (0.79%) is under-represented, using <strong>Filter</strong> on c7 (adjusted p-value for under-represented KEGG pathways): <code class="language-plaintext highlighter-rouge">03040</code>, Spliceosome</li>
         </ol>
       </blockquote>
     </blockquote>
@@ -3968,7 +3921,7 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
   <h3 id="hands_on-hands-on-perform-kegg-enrichment-analysis"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Perform KEGG enrichment analysis</h3>
 
   <ol>
-    <li><strong>Cut</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0" title="Tested with toolshed.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0"><strong>Cut</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/bgruening/text_processing/tp_cut_tool/1.1.0</span></span>  with
       <ul>
         <li><em>“Cut columns”</em>: <code class="language-plaintext highlighter-rouge">c1,c3</code></li>
         <li><em>“Delimited by”</em>: <code class="language-plaintext highlighter-rouge">Tab</code></li>
@@ -3990,7 +3943,7 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
     <li>
       <p>Rename to <code class="language-plaintext highlighter-rouge">KEGG pathways to plot</code></p>
     </li>
-    <li><strong>Pathview</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/pathview/pathview/1.24.0+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/pathview/pathview/1.24.0+galaxy0"><strong>Pathview</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/pathview/pathview/1.24.0+<span class="notranslate">galaxy</span>0</span></span>  with
       <ul>
         <li><em>“Number of pathways to plot”</em>: <code class="language-plaintext highlighter-rouge">Multiple</code>
           <ul>
@@ -4067,6 +4020,11 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
                         </ul>
                     </blockquote>
                     
+
+                    <h1>Frequently Asked Questions</h1>
+                    Have questions about this tutorial? Check out the  <a href="/training-material/topics/transcriptomics/faqs/">FAQ page for the Transcriptomics topic</a> to see if your question is listed there.
+                    If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                    <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
 
                     
                     <h1 data-toc-skip>Useful literature</h1>
@@ -4259,6 +4217,8 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
 </li></ol>
                     
 
+                    
+
                     <h1>Feedback</h1>
                     <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
 
@@ -4295,7 +4255,7 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
                     <h1>Citing this Tutorial</h1>
                     <p>
                         <ol>
-                            <li id="citation-text">Bérénice Batut, Mallory Freeberg, Mo Heydarian, Anika Erxleben, Pavankumar Videm, Clemens Blank, Maria Doyle, Nicola Soranzo, Peter van Heusden, 2021 <b>Reference-based RNA-Seq data analysis (Galaxy Training Materials)</b>. <a href="/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html">/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html</a> Online; accessed TODAY
+                            <li id="citation-text">Bérénice Batut, Mallory Freeberg, Mo Heydarian, Anika Erxleben, Pavankumar Videm, Clemens Blank, Maria Doyle, Nicola Soranzo, Peter van Heusden, 2021 <b>Reference-based RNA-Seq data analysis (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html">https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html</a> Online; accessed TODAY
                             </li>
                             <li>
                             Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -4313,9 +4273,9 @@ both factors: factor 1 (treatment) becomes factor 2 and factor 2 (sequencing) be
     author = "Bérénice Batut and Mallory Freeberg and Mo Heydarian and Anika Erxleben and Pavankumar Videm and Clemens Blank and Maria Doyle and Nicola Soranzo and Peter van Heusden",
     title = "Reference-based RNA-Seq data analysis (Galaxy Training Materials)",
     year = "2021",
-    month = "02",
-    day = "16"
-    url = "\url{/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html}",
+    month = "05",
+    day = "26"
+    url = "\url{https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }
 @article{Batut_2018,
@@ -4343,19 +4303,15 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
-                </div>
-            </div>
-        </div>
+                    <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
 
-        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
+                    
 
-        
-
-        
-        <blockquote class="agenda follow-up">
-            <strong class="follow-up"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">curriculum</span> Do you want to extend your knowledge? Follow one of our recommended follow-up trainings:</strong>
-            <ul>
-                
+                    
+                    <blockquote class="agenda follow-up">
+                        <strong class="follow-up"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">curriculum</span> Do you want to extend your knowledge? Follow one of our recommended follow-up trainings:</strong>
+                        <ul>
+                            
     <li>
     
         
@@ -4364,6 +4320,14 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         
             <ul>
                 
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                     
                         
                     
@@ -4425,7 +4389,19 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
                     
                         
                     
+                        
+                    
+                        
+                    
                 
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
                     
                         
                     
@@ -4485,6 +4461,10 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
                                 
                             
                             </li>
+                        
+                    
+                        
+                    
                         
                     
                 
@@ -4549,15 +4529,31 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
                     
                         
                     
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                 
             </ul>
         
     
     </li>
 
-            </ul>
-        </blockquote>
-        
+                        </ul>
+                    </blockquote>
+                    
+
+                </div>
+            </div>
+        </div>
     </section>
 </div>
 
@@ -4571,7 +4567,7 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         </p>
         <p>
             Found a typo? Something is wrong in this tutorial? Edit it on
-            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/transcriptomics/tutorials/ref-based/tutorial.md">GitHub</a>.
+            <a href="https://github.com/galaxyproject/training-material/tree/main/topics/transcriptomics/tutorials/ref-based/tutorial.md">GitHub</a>.
         </p>
         <p>
     The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

@@ -2,9 +2,9 @@
 body { font-size: 15px; word-wrap: break-word; position: relative; }
 
 /*! Dark; http://bytefluent.com/devify/ */
-div#theme-selector { display: flex; flex-direction: row; flex-wrap: wrap; width: 200px; justify-content: flex-start; }
+div#theme-selector, div#lang-selector { display: flex; flex-direction: row; flex-wrap: wrap; width: 200px; justify-content: flex-start; margin-left: 1em; }
 
-div#theme-selector label.btn { margin: 0.1em; }
+div#theme-selector label.btn, div#theme-selector a.btn, div#lang-selector label.btn, div#lang-selector a.btn { margin: 0.1em; }
 
 body.theme-night { color: #eee; background-color: #444444; /* Comment */ /* Error */ /* Generic */ /* Keyword */ /* Literal */ /* Name */ /* Operator */ /* Other */ /* Punctuation */ /* Comment.Multiline */ /* Comment.Preproc */ /* Comment.Single */ /* Comment.Special */ /* Generic.Deleted */ /* Generic.Emph */ /* Generic.Error */ /* Generic.Heading */ /* Generic.Inserted */ /* Generic.Output */ /* Generic.Prompt */ /* Generic.Strong */ /* Generic.Subheading */ /* Generic.Traceback */ /* Keyword.Constant */ /* Keyword.Declaration */ /* Keyword.Namespace */ /* Keyword.Pseudo */ /* Keyword.Reserved */ /* Keyword.Type */ /* Literal.Date */ /* Literal.Number */ /* Literal.String */ /* Name.Attribute */ /* Name.Builtin */ /* Name.Class */ /* Name.Constant */ /* Name.Decorator */ /* Name.Entity */ /* Name.Exception */ /* Name.Function */ /* Name.Label */ /* Name.Namespace */ /* Name.Other */ /* Name.Property */ /* Name.Tag */ /* Name.Variable */ /* Operator.Word */ /* Text.Whitespace */ /* Literal.Number.Float */ /* Literal.Number.Hex */ /* Literal.Number.Integer */ /* Literal.Number.Oct */ /* Literal.String.Backtick */ /* Literal.String.Char */ /* Literal.String.Doc */ /* Literal.String.Double */ /* Literal.String.Escape */ /* Literal.String.Heredoc */ /* Literal.String.Interpol */ /* Literal.String.Other */ /* Literal.String.Regex */ /* Literal.String.Single */ /* Literal.String.Symbol */ /* Name.Builtin.Pseudo */ /* Name.Variable.Class */ /* Name.Variable.Global */ /* Name.Variable.Instance */ /* Literal.Number.Integer.Long */ }
 
@@ -636,6 +636,12 @@ nav input.nicer:focus, nav input.nicer:active { background: #fff2; color: rgba(2
 
 .training-network-map { width: 90%; margin: 0 auto; }
 
+.faqs h3.faq-area { color: #888888; }
+
+.faqs h3.faq-area i { font-size: 0.5em; }
+
+.faqs h2 a { color: black; }
+
 .tutorial > h1:first-child { margin-bottom: 1rem; }
 
 .tutorial table { display: block; width: 100%; overflow-x: auto; max-width: 100%; margin-bottom: 1rem; }
@@ -644,7 +650,13 @@ nav input.nicer:focus, nav input.nicer:active { background: #fff2; color: rgba(2
 
 .tutorial table thead th { vertical-align: bottom; border-bottom: 2px solid #eceeef; }
 
+.tutorial div.container blockquote ul, .tutorial div.container blockquote p, .tutorial div.container blockquote li > p:last-child { margin-bottom: 0.5rem; }
+
+.tutorial div.container blockquote p:last-child { margin-bottom: 0; }
+
 .tutorial blockquote ul, .tutorial blockquote ol, .tutorial blockquote > blockquote, .tutorial blockquote p { margin-bottom: 0px; }
+
+.tutorial blockquote img { display: block; }
 
 .tutorial blockquote.agenda { margin-top: 3rem; margin-bottom: 2rem; padding: 1rem 0.89rem 1rem; border: 1px solid #86D486; box-shadow: 3px 3px #86D486; }
 
@@ -722,6 +734,10 @@ nav input.nicer:focus, nav input.nicer:active { background: #fff2; color: rgba(2
 
 .tutorial blockquote.quote { border-left: 5px solid #eee; padding-left: 1em; }
 
+.tutorial blockquote.spoken { display: none; }
+
+.tutorial blockquote.hidden { display: none; }
+
 .tutorial blockquote.matrix table { width: unset; margin-left: auto; margin-right: auto; margin-top: 20pt; }
 
 .tutorial blockquote.matrix table thead th { border-bottom: 2px solid #777; text-align: left; }
@@ -736,9 +752,29 @@ nav input.nicer:focus, nav input.nicer:active { background: #fff2; color: rgba(2
 
 .tutorial blockquote.feedback > h3 .fa { padding-right: 0.2rem; }
 
+.tutorial .pre-break-lines code { white-space: pre-wrap; }
+
 .tutorial .fold-unfold { margin-left: 1rem; }
 
 .tutorial .google-form { width: 100%; height: 1100px; border: 0; }
+
+.newslist { display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-around; margin-bottom: 2rem; }
+
+.newslist .newsitem { width: 100%; }
+
+.newslist .newscover { width: 100%; object-fit: cover; margin-top: auto; margin-bottom: auto; background-color: white; border-radius: 2rem; padding: 1rem; -webkit-transition: border 0.2s ease-in-out; -o-transition: border 0.2s ease-in-out; transition: border 0.2s ease-in-out; }
+
+.newslist h3 { margin-top: 1rem; }
+
+.newslist .contributors-line { margin-bottom: 1rem; }
+
+.newsitem .contributors-line { margin-bottom: 1rem; }
+
+.newstable h5 { margin-top: 0px; color: #292b2c !important; }
+
+.newstable a.newstitle { font-color: #292b2c; }
+
+.newstable p { margin: 0px; }
 
 .contributors { padding: 0; }
 
@@ -861,5 +897,23 @@ span.tool.galaxy-proxy-active:hover { background-color: #0069d9; border-color: #
 @media (max-width: 992px) { .container { max-width: unset; } }
 
 video::cue { background: #000000cc; color: white; }
+
+#playlist { display: flex; flex-direction: row; overflow: auto; }
+
+#playlist.vertical { flex-direction: column; }
+
+#playlist .pl-item a { display: flex; flex-direction: column; }
+
+#playlist .pl-item a .title { font-weight: 700; }
+
+#playlist .pl-item a .topic { font-style: italic; }
+
+#playlist .pl-item a .cover { width: 200px; }
+
+#transcript { height: 400px; overflow-y: scroll; }
+
+#transcript tr td:nth-child(1) { padding-right: 1em; color: #555; }
+
+abbr { text-decoration: underline dotted; cursor: help; font-variant: none; }
 
 /*# sourceMappingURL=main.css.map */
